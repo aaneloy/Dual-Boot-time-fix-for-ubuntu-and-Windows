@@ -27,6 +27,7 @@ Once Windows Time has been stopped and disabled and the registry key has been ch
 
 
 2. Linux Solution:
+
 The solution, or rather, multiple possible solutions, are all quite easily solved. My preferred method for this issue, is simply to make the GNU/Linux system use 'localtime' instead of UTC. To do this on any modern system using SystemD, use the following command:
 
 sudo timedatectl set-local-rtc 1
