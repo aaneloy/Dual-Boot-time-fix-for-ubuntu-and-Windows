@@ -9,8 +9,10 @@ While using dual boot, usually clock time gets reset once we change boot from li
 
 It is better to follow the windows solution for this.
 
-1. Windows Solution:
 
+
+
+1. Windows Solution:
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
@@ -26,8 +28,9 @@ Once Windows Time has been stopped and disabled and the registry key has been ch
 
 
 
-2. Linux Solution:
 
+
+2. Linux Solution:
 The solution, or rather, multiple possible solutions, are all quite easily solved. My preferred method for this issue, is simply to make the GNU/Linux system use 'localtime' instead of UTC. To do this on any modern system using SystemD, use the following command:
 
 sudo timedatectl set-local-rtc 1
