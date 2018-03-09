@@ -4,19 +4,19 @@ Noob people like me or others face some critical problem while using dual boot w
 
 While using dual boot, usually clock time gets reset once we change boot from linux to windows. This occurs mainly for bios clock reset for dual boot start. we can solve this problem easily by following any of the following steps.
 
-1. Windows solution
-2. Linux solution
+# 1. Windows solution
+# 2. Linux solution
 
 It is better to follow the windows solution for this.
 
 
 
 
-1. Windows Solution:
+## 1. Windows Solution:
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
-"RealTimeIsUniversal"=dword:00000001
+# [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
+# "RealTimeIsUniversal"=dword:00000001
 
 Next, save that file as "WindowsTimeFix.reg" and exit Notepad. Then, navigate your file browser to wherever you saved the file we just made, and double click it. A box will pop up essentially asking if you want to proceed, tell it that you do.
 
@@ -26,13 +26,9 @@ Or, run the command sc config w32time start= disabled from an elevated command p
 
 Once Windows Time has been stopped and disabled and the registry key has been changed, your Windows will no longer have the time issue whenever you switch back and forth between GNU/Linux.
 
-
-
-
-
-2. Linux Solution:
+## 2. Linux Solution:
 The solution, or rather, multiple possible solutions, are all quite easily solved. My preferred method for this issue, is simply to make the GNU/Linux system use 'localtime' instead of UTC. To do this on any modern system using SystemD, use the following command:
 
-sudo timedatectl set-local-rtc 1
+# sudo timedatectl set-local-rtc 1
 
 And done. That was easy!
