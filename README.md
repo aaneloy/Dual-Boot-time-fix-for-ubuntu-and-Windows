@@ -1,4 +1,4 @@
-# Universal-Time-Fix-for-Dual-Boot-Linux-and-Windows
+# Universal-CPU-CLOCK-Time-Fix-for-Dual-Boot-Linux-and-Windows
 
 Noob people like me or others face some critical problem while using dual boot with Linux and Windows. One of the main problem is the universal time fixing.
 
