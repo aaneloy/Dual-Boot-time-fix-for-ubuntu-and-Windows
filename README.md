@@ -1,4 +1,4 @@
-# Dual-Boot-time-fox-for-ubuntu-and-Windows
+# Dual-Boot-time-fix-for-ubuntu-and-Windows
 
 Noob people like me or others face some critical problem while using dual boot with Linux and Windows. One of the main problem is the universal time fixing.
 
